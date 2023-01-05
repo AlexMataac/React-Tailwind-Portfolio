@@ -1,8 +1,9 @@
 import React from 'react';
 import Me from '../img/hero.JPG';
 import {MdOutlineKeyboardArrowRight} from 'react-icons/md';
-import { Link } from 'react-scroll';
+import { Button, Link } from 'react-scroll';
 import Typewriter from 'typewriter-effect';
+import {HiDocumentDownload} from 'react-icons/hi';
 
 const Home = () => {
   return (
@@ -24,20 +25,20 @@ const Home = () => {
                     loop:{Infinity}
                 }} />
             </h2>
-            <p className='text-green-500 py-4 max-w-md'>
+            <p className='text-green-500 py-4 max-w-md sm:max-w-sm'>
                 Working in Cognizant Softvision in Makati City, Philippines
             </p>
 
             <div>
-                <Link to="portfolio" smooth duration={500} className='group text-white w-fit px-6 py-3 my-2 flex items-center rounded-md 
+                <a href='/Alex Resume.pdf' className='group text-white w-fit px-6 py-3 my-2 flex items-center rounded-md 
                 bg-gradient-to-r from-cyan-500 to to-blue-500 cursor-pointer mb-10'>
-                    Experience
-                    <span className='group-hover:rotate-90 duration-300'>
-                    <MdOutlineKeyboardArrowRight size={30} className="ml-1" />
+                    Resume
+                    <span className='group-hover:rotate-0 duration-300'>
+                    <HiDocumentDownload size={20} className="ml-1" />
                     </span>
-                </Link>
-                </div>
+                </a>
             </div>
+        </div>
 
             <div className='flex justify-center items-center pb-5' >
                 <img src={Me} alt="my profile" className='flex items-center justify-center shadow-md shadow-red-500 w-52 h-52 md:w-96 md:h-96 md:ml-12' style={{borderRadius:'50%'}}/>
